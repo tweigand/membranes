@@ -1,0 +1,14 @@
+[       0] Initializing Proteus
+[       0] HashDist Version: unknown
+[       0] HashStack Version: unknown
+[       0] Proteus Version: 435d1c0ad96e90b851c72f921636cba2cd009a62
+[       0] Initializing MPI
+[       0] PETSc options from commandline
+[       0] ['/Users/tim/Programming/proteus/darwin/bin//parun', '-ksp_type', 'bcgsl', '-pc_type', 'asm', '-pc_asm_type', 'restrict', '-pc_asm_overlap', '2', '-ksp_atol', '1.0e-10', '-ksp_rtol', '0.0', '-log_summary']
+[       0] Adding . to path for loading modules
+[       0] Loading problem-specific modules
+[       0] Importing input modules
+[       0] Using default so module
+[       0] Loading p module = Membrane_p
+[       0] Loading n module = Membrane_c0p1_n
+[       0] Proteus.Profiling never initialized. Doing it at exit.

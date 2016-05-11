@@ -1,0 +1,100 @@
+[       0] Initializing Proteus
+[       0] HashDist Version: unknown
+[       0] HashStack Version: unknown
+[       0] Proteus Version: 435d1c0ad96e90b851c72f921636cba2cd009a62
+[       0] Initializing MPI
+[       0] PETSc options from commandline
+[       0] ['/Users/tim/Programming/proteus/darwin/bin//parun', '-ksp_type', 'bcgsl', '-pc_type', 'asm', '-pc_asm_type', 'restrict', '-pc_asm_overlap', '2', '-ksp_atol', '1.0e-10', '-ksp_rtol', '0.0', '-log_summary']
+[       0] Adding . to path for loading modules
+[       0] Loading problem-specific modules
+[       0] Importing input modules
+[       0] Using default so module
+[       0] Loading p module = Membrane_p
+[       0] Loading n module = Membrane_c0p1_n
+[       0] Attaching input stream to stdin
+[       0] Running Proteus version 1.0.0
+[       0] Setting simulation processing defaults
+[       0] Starting Membrane_Model_Pores_Outflow run number 0
+[       0] Initializing NumericalSolution for Membrane_Model_Pores_Outflow
+ System includes: 
+Membrane_Model_Pores_Outflow
+
+[       0] Setting Archiver(s)
+[       0] Setting up MultilevelMesh
+[       0] Building one multilevel mesh for all models
+[       0] Generating mesh for Membrane_Model_Pores_Outflow
+[       0] Calling Triangle to generate 2D mesh forMembrane_Model_Pores_Outflow
+[      12] Converting to Proteus Mesh
+[      17] Generating 1-level mesh from coarse Triangle mesh
+[      17] Partitioning mesh among 4 processors using partitioningType = 1
+[      30] Number of Subdomain Elements Owned= 159166
+[      30] Number of Subdomain Elements = 159166
+[      30] Number of Subdomain Nodes Owned= 89102
+[      30] Number of Subdomain Nodes = 89106
+[      30] Number of Subdomain elementBoundaries Owned= 248269
+[      30] Number of Subdomain elementBoundaries = 248271
+[      30] Number of Subdomain Edges Owned= 248269
+[      30] Number of Subdomain Edges = 248271
+[      30] Finished partitioning
+[      30] *** Global ***
+Number of triangles  : 649715
+Number of edges : 1013283
+Number of nodes : 363569
+
+*** Local ***
+Number of triangles  : 159166
+Number of edges : 248271
+Number of nodes : 89106
+
+[      30] Numerical Solution Sparse diffusion information key (0, 0) = (array([0, 2, 4], dtype=int32), array([0, 1, 0, 1], dtype=int32))
+[      30] Setting up MultilevelTransport for Membrane_Model_Pores_Outflow
+[      30] Allocating phi
+[      30] Setting Boundary Conditions
+[      30] Setting Boundary Conditions-1
+[      30] Setting Boundary Conditions-2
+[      30] Setting Boundary Conditions-2a
+[      30] Setting Boundary Conditions-3
+[      30] Setting Boundary Conditions-4
+[      31] Sparse diffusion information key (0, 0) = (array([0, 2, 4], dtype=int32), array([0, 1, 0, 1], dtype=int32))
+[      84] ParMat_petsc4py comm.rank= 0 blockSize = 1 par_n= 89102 par_N=363569 par_nghost=4 par_jacobian.getSizes()= ((89102, 363569), (89102, 363569)) 
+[      84] Setting Membrane_Model_Pores_Outflow stepController to proteus.StepControl.SC_base
+[      84] Setting up MultilevelLinearSolver forMembrane_Model_Pores_Outflow
+[      84] multilevelLinearSolverChooser type= proteus.LinearSolvers.KSP_petsc4py
+[      84] Setting up MultilevelNonLinearSolver for Membrane_Model_Pores_Outflow
+[      84] Finished setting up models and solvers
+[      84] Setting up SimTools for Membrane_Model_Pores_Outflow
+[      84] Building tnList from model = Membrane_Model_Pores_Outflow nDTout = 1
+[      84] Time sequence[0.0, 1.0]
+[      84] Setting Membrane_Model_Pores_Outflow systemStepController to object of type proteus.SplitOperator.Sequential_MinModelStep
+[      84] Finished NumericalSolution initialization
+[      84] Setting initial conditions
+[      84] No initial conditions provided for model Membrane_Model_Pores_Outflow
+[      84] Attaching models and running spin-up step if requested
+[      84] Attaching models to model Membrane_Model_Pores_Outflow
+[      84] Archiving initial conditions
+[      84] Gathering Archive Time step
+[      84] Done Gathering Archive Time Step
+[      84] Estimating initial time derivative and initializing time history for model Membrane_Model_Pores_Outflow
+[     115] Choosing initial time step for model Membrane_Model_Pores_Outflow
+[     115] Initializing time step on model Membrane_Model_Pores_Outflow to dt =  1.00000e+00
+[     129] Initializing time history for model step controller
+[     129] Initializing time step on system Default System to dt =  1.00000e+00
+[     129] Initializing step sequence for system Default System to [(1.0, <proteus.Transport.MultilevelTransport instance at 0x10c010200>)]
+[     129] Auxiliary variable calculations for model Membrane_Model_Pores_Outflow
+[     138] Flux
+[     138] array([  0.,   0.,  nan,  nan,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+         0.,  nan])
+[     138] Starting time stepping
+[     138] ==============================================================
+[     138] Solving over interval [ 0.00000e+00, 1.00000e+00]
+[     138] ==============================================================
+[     138] Model: Membrane_Model_Pores_Outflow
+[     138] StepControl base stepExact t_model= 1.0 tOut= 1.0 t_model_last= 0.0 dt_model= 1.0 setting to 1.0 

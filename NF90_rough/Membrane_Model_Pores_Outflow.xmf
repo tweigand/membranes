@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="2.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid CollectionType="Temporal" GridType="Collection" Name="Mesh Spatial_Domain">
+      <Grid GridType="Uniform">
+        <Time Name="0" Value="0.0" />
+        <Topology NumberOfElements="649715" Type="Triangle">
+          <DataItem DataType="Int" Dimensions="649715 3" Format="HDF">Membrane_Model_Pores_Outflow.h5:/elementsSpatial_Domain0</DataItem>
+        </Topology>
+        <Geometry Type="XYZ">
+          <DataItem DataType="Float" Dimensions="363569 3" Format="HDF" Precision="8">Membrane_Model_Pores_Outflow.h5:/nodesSpatial_Domain0</DataItem>
+        </Geometry>
+        <Attribute AttributeType="Scalar" Center="Node" Name="nodeMaterialTypes">
+          <DataItem DataType="Int" Dimensions="363569" Format="HDF">Membrane_Model_Pores_Outflow.h5:/nodeMaterialTypes_t0</DataItem>
+        </Attribute>
+        <Attribute AttributeType="Scalar" Center="Cell" Name="elementMaterialTypes">
+          <DataItem DataType="Int" Dimensions="649715" Format="HDF">Membrane_Model_Pores_Outflow.h5:/elementMaterialTypes_t0</DataItem>
+        </Attribute>
+        <Attribute AttributeType="Scalar" Center="Node" Name="Water_Mass_Fraction">
+          <DataItem DataType="Float" Dimensions="363569" Format="HDF" Precision="8">Membrane_Model_Pores_Outflow.h5:/Water_Mass_Fraction_t0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
